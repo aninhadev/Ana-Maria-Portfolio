@@ -1,7 +1,8 @@
 /*  RESET */
 
-*{
+* {
   text-decoration: none;
+  margin: auto;
 }
 
 body {
@@ -15,209 +16,82 @@ body {
 
 /* HEADER */
 
-
-
 header {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-
-
+overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 ul {
   flex-direction: row;
+  
+ 
 }
 
 li {
+  font-size: 20px;
   color: white;
   display: inline-block;
   margin: 20px;
   padding: 10px;
   border-radius: 4px;
-  border: 2px solid blueviolet;
+
 }
 
 /* SOBRE MIM */
 
-.sobre-mim{
-  margin-top: 100px;
-
+.hello-home {
+ 
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.content-home{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
 
+h2{
+  font-size: 40px;
+
+}
 
 h1 {
-  font-size: 65px;
-}
-
-.nome-sobre{
+  font-size: 140px;
   color: blueviolet;
-}
-
-.texto-sobre-mim{
-    text-align: justify;
-}
-
-
-
-
-/* SERVIÇO */
-
-.skill {
-  display: flex;
-}
-
-
-.card-skill {
-  padding: 20px;
-  border: 2px solid white;
-  margin: 10px;
-  display: flex;
-  
-}
-
-/* FORMAÇÃO */
-
-.formacao{
-  margin-top: 100px;
-}
-
-.card-formacao {
-  background-color: aliceblue;
-  color: black;
-  width: 322px;
-  height: 322px;
-  display: inline-block;
-  flex-direction: row;
-  text-align: center;
-  border: 2px solid rebeccapurple;
-  border-radius: 10px;
-}
-
-.titulo-formacao {
-  font-weight: bolder;
-}
-
-h2 {
-  background-color: blueviolet;
-  display: flex;
-  width: 200px;
-  margin-top: 80px;
-}
-
-/* SERVIÇOS */
-
-
-.container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 3rem 0;
-}
-
-.card-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-}
-
-.card {
-  height: 300px;
-  width: 400px;
-  margin: 3rem 0 0 0;
-}
-
-/*  Cards */
-
-.card-landing {
-  height: 300px;
-  width: 400px;
-  margin: 3rem 0 0 0;
-}
-
-.card-plataforma {
-  height: 300px;
-  width: 400px;
-  margin: 3rem 0 0 0;
-}
-
-.card-sistemas {
-  height: 300px;
-  width: 400px;
-  margin: 3rem 0 0 0;
-}
-
-.card-text {
-  width: 40%;
   font-family: sans-serif;
-  letter-spacing: 1px;
-  color: rgb(109, 109, 109);
-}
-
-.card-wrapper {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.card-wrapper::before {
-  content: "";
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  display: block;
-  border: 1px solid white;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.card-wrapper h2 {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin: 0;
-  transition: 0.3s;
-  background-color: blueviolet;
-  width: 220px;
-}
-
-.card-wrapper p {
-  font-size: 0;
-  visibility: hidden;
-  opacity: 0;
   font-weight: bold;
-  text-transform: uppercase;
-  transition: 0.3s;
 }
 
-.card :hover {
-  filter: unset;
+.specialist{
+  font-size: 20px;
 }
 
-.card:hover > .card-wrapper::before {
-  height: 250px;
-  width: 350px;
-  opacity: 1;
+.img-rockeatWoman {
+background: url("../img/7450187-removebg-preview.png");
+  width: 500px;
+  height: 500px;
+  animation: chatTranslate 3s ease-in-out infinite;
 }
 
-.card:hover > .card-wrapper p {
-  opacity: 1;
-  visibility: visible;
-  font-size: 14px;
-}
+/* ANIMAÇÃO*/
 
-.h4-projetos {
-  color: white;
-  font-size: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@keyframes chatTranslate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-/* CONTATO */
