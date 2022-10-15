@@ -140,3 +140,11 @@ align-items: center;
   height: 250px;
 }
 
+.card-hobbie {
+  text-align: center;
+}
+
+.card-hobbie > img{
+  width: 120px;
+  height: 120px;
+}
