@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 /*  RESET */
 
@@ -24,7 +22,7 @@ body {
 
 header {
   margin-left: 250px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,15 +77,6 @@ h1 {
   font-size: 20px;
 }
 
-.img-rockeatWoman {
-  
-  margin-left: 100px;
-  background: url("../img/7450187-removebg-preview.png");
-  width: 500px;
-  height: 500px;
-  animation: chatTranslate 3s infinite;
-}
-
 /* ANIMAÇÃO*/
 
 @keyframes chatTranslate {
@@ -102,41 +91,39 @@ h1 {
   }
 }
 
+.img-home {
+  margin-left: 30px;
+  padding-bottom: 50px;
+  width: 400px;
+  height: 450px;
+  animation: chatTranslate 3s infinite;
+}
+
+/* SOBRE MIM */
+
+.about {
+  background-color: rgb(23, 36, 48);
+  margin-top: 100px;
+}
+
+.padrao-titulo {
+  background-color: blueviolet;
+  width: 200px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.about > p{
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700 ;
+}
 
 
-
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container p {
-  font-size: 3rem;
-  padding: 0.5rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-}
-.container p span.typed-text {
-  font-weight: normal;
-  color: #dd7732;
-}
-.container p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-.container p span.cursor.typing {
-  animation: none;
-}
-@keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+.img-content{
+  margin-left:850px ;
+  margin-bottom: 200px;
+  background-color: blueviolet;
+  width: 230px;
+  height: 330px;
 }
