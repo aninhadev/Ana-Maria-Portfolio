@@ -140,6 +140,12 @@ align-items: center;
   height: 250px;
 }
 
+
+.wrapp{
+  display: flex;
+  flex-direction: row;
+}
+
 .card-hobbie {
   text-align: center;
 }
