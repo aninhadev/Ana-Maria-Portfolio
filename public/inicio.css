@@ -21,22 +21,18 @@ body {
 /* HEADER */
 
 header {
-  margin-left: 250px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: fixed; /* Set the navbar to fixed position */
-  /* Position the navbar at the top of the page */
-  /* Full width */
+  border-radius: 5px;
+  margin-left: 350px;
+  text-align: center;
+  background-color: rgb(5, 1, 6);
+  position: fixed;
 }
 
 ul {
   flex-direction: row;
 }
 
-li {
+.li-header {
   font-size: 20px;
   color: white;
   display: inline-block;
@@ -48,6 +44,7 @@ li {
 /* SOBRE MIM */
 
 .hello-home {
+  margin-top: 100px;
   width: 100%;
   height: 500px;
   display: flex;
@@ -75,28 +72,6 @@ h1 {
 
 .specialist {
   font-size: 20px;
-}
-
-/* ANIMAÇÃO*/
-
-@keyframes chatTranslate {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.img-home {
-  margin-left: 30px;
-  padding-bottom: 50px;
-  width: 400px;
-  height: 450px;
-  animation: chatTranslate 3s infinite;
 }
 
 /* SOBRE MIM */
@@ -156,7 +131,6 @@ h1 {
 
 .portfolio {
   margin-top: 200px;
-  
 }
 
 .titulo-portfolio {
@@ -190,4 +164,55 @@ h1 {
   padding: 7px;
   display: flex;
   background-color: blueviolet;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+  margin-top: 200px;
+}
+
+.skill-wrapp {
+  display: flex;
+  flex-direction: row;
+}
+
+.hard-skill {
+  width: 500px;
+  height: 400px;
+  margin: 100px;
+}
+
+.hard-skill > h4 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.img-hardskill {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.soft-skill {
+  width: 500px;
+  height: 400px;
+  margin: 100px;
+}
+
+.soft-skill > h4 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.soft-skill > ol {
+
+  list-style: circle;
+  font-size: 20px;
+}
+
+.soft-skill > ol > li{
+  padding: 10px;
 }
