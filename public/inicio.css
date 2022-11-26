@@ -41,6 +41,12 @@ ul {
   border-radius: 4px;
 }
 
+/* ANIMATION */
+
+canvas {
+  background: #000;
+}
+
 /* SOBRE MIM */
 
 .hello-home {
@@ -131,12 +137,19 @@ h1 {
 
 .portfolio {
   margin-top: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-portfolio {
   font-weight: 800;
   font-size: 30px;
   text-align: center;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 26px;
 }
 
 .content-project {
@@ -146,6 +159,12 @@ h1 {
   flex-direction: row;
 }
 
+.card {
+  color: #000;
+  margin: 20px;
+}
+
+/*
 .card-project {
   margin: 20px;
   background-color: #fff;
@@ -154,6 +173,9 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
+*/
+
 .btn-ver-mais {
   margin: auto;
   color: #fff;
@@ -337,7 +359,6 @@ form {
 }
 
 .redes-sociais {
-
   width: 400px;
   height: 400px;
   margin-left: 190px;
@@ -355,12 +376,8 @@ form {
   align-items: center;
 
   padding: 30px;
- 
 }
 
 .redes-content > img {
-
   padding-left: 20px;
 }
-
-
