@@ -20,7 +20,7 @@ body {
 
 /* HEADER */
 
-header {
+/* header {
   border-radius: 5px;
   margin-left: 350px;
   text-align: center;
@@ -39,7 +39,7 @@ ul {
   margin: 20px;
   padding: 10px;
   border-radius: 4px;
-}
+} */
 
 /* ANIMATION */
 
@@ -89,7 +89,13 @@ h1 {
 
 .conteudo {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.text-conteudo{
+ 
+  width: 500px;
 }
 
 .padrao-titulo {
@@ -102,10 +108,11 @@ h1 {
 .about > .conteudo > div > p {
   padding-top: 30px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: none;
 }
 
 .img-content {
+  margin-left: 100px;
   align-items: center;
   padding: 20px;
   background-color: blueviolet;
@@ -114,6 +121,7 @@ h1 {
 }
 
 .my-photo {
+ 
   width: 190px;
   height: 250px;
 }
@@ -494,4 +502,37 @@ form {
 
 .redes-content > img {
   padding-left: 20px;
+}
+
+/* Responsive TABLET */
+
+@media screen and (max-width: 768px) {
+
+
+body{
+  padding: 0%;
+  margin: auto;
+}
+
+  #canvas{
+    display: none;
+  }
+
+  .conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0%;
+  }
+
+  .conteudo p {
+    text-align: justify;
+   
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
 }
